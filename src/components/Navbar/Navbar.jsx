@@ -35,6 +35,7 @@ const Navbar = () => {
   const handleDemoClick = (e) => {
     e.preventDefault();
     closeMobileMenu();
+    window.location.reload();
   };
 
   const ArrowIcon = ({ isOpen }) => (
