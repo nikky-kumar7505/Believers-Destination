@@ -1,0 +1,971 @@
+/* =====================================================
+   WHAT'S INSIDE / WHY STUDENTS PREFER
+===================================================== */
+.bootcamp-features-container {
+  background: #fff;
+  width: 100%;
+  padding: 5rem 1rem;
+}
+
+.bootcamp-features-sections {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.bfc-header {
+  text-align: center;
+  max-width: 950px;
+  margin: 0 auto 3rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.65s, transform 0.65s;
+}
+
+.bfc-header.bfc-visible,
+.bfc-split-panel.bfc-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bootcamp-features-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.bootcamp-features-eyebrow-line {
+  width: 40px;
+  height: 2px;
+  background: #1a56db;
+}
+
+.bootcamp-features-eyebrow-text {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1a56db;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.bootcamp-features-section-heading {
+  font-size: 34px;
+  font-weight: 800;
+  color: #0d1b2a;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.bootcamp-features-section-heading span {
+  color: #1a56db;
+}
+
+.bootcamp-features-lead {
+  font-size: 15px;
+  color: #4a5568;
+  line-height: 1.8;
+}
+
+.bootcamp-features-lead b {
+  color: #1c1c1c;
+  font-weight: 700;
+}
+
+/* ============ SPLIT PANEL ============ */
+.bfc-split-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease 0.15s, transform 0.65s ease 0.15s;
+}
+
+.bfc-pointers {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bfc-pointer-item {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.bfc-pointer-item:hover {
+  border-color: #1a56db;
+  transform: translateX(4px);
+}
+
+.bfc-pointer-active {
+  border-color: #1a56db;
+  background: #eef3ff;
+  box-shadow: 0 8px 24px rgba(26, 86, 219, 0.12);
+}
+
+.bfc-pointer-chip {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  background: #1a56db;
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bfc-pointer-num {
+  font-size: 15px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.bfc-pointer-content {
+  flex-grow: 1;
+}
+
+.bfc-pointer-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.bfc-pointer-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0d1b2a;
+  line-height: 1.3;
+}
+
+.bfc-pointer-arrow {
+  color: #94a3b8;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.bfc-arrow-active {
+  color: #1a56db;
+  transform: translateX(4px);
+}
+
+.bfc-pointer-body {
+  font-size: 13px;
+  color: #4a5568;
+  line-height: 1.5;
+  margin-top: 4px;
+}
+
+/* Image Panel */
+.bfc-image-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bfc-image-inner {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  box-shadow: 0 20px 40px rgba(13, 27, 42, 0.15);
+}
+
+.bfc-fade-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.4s ease;
+}
+
+.bfc-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(13, 27, 42, 0.75) 0%, transparent 50%);
+}
+
+.bfc-image-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #fff;
+}
+
+.bfc-badge-num {
+  font-size: 40px;
+  font-weight: 800;
+  color: #f5a623;
+  line-height: 1;
+}
+
+.bfc-badge-label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.bfc-dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.bfc-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #cbd5e0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.bfc-dot-active {
+  background: #1a56db;
+  width: 28px;
+  border-radius: 5px;
+}
+
+/* =====================================================
+   MEET YOUR MENTORS
+===================================================== */
+.ms-section {
+  color: #1a1a2e;
+  background: #f5f6ff;
+  width: 100%;
+  padding: 5rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.ms-section::before {
+  content: '';
+  opacity: 0.3;
+  pointer-events: none;
+  background-image: linear-gradient(#d6d8f5 1px, transparent 1px),
+    linear-gradient(90deg, #d6d8f5 1px, transparent 1px);
+  background-size: 48px 48px;
+  position: absolute;
+  inset: 0;
+}
+
+.ms-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ms-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.65s, transform 0.65s;
+}
+
+.ms-header.ms-visible,
+.ms-grid.ms-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ms-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.ms-eyebrow-line {
+  width: 40px;
+  height: 2px;
+  background: #1a56db;
+}
+
+.ms-eyebrow-text {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1a56db;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.ms-h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #0d1b2a;
+  line-height: 1.2;
+  margin-bottom: 18px;
+  letter-spacing: -0.5px;
+}
+
+.ms-h1-accent {
+  color: #1a56db;
+  font-style: italic;
+}
+
+.ms-subhead {
+  font-size: 16px;
+  color: #4a5568;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.ms-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease 0.15s, transform 0.65s ease 0.15s;
+}
+
+.ms-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(13, 27, 42, 0.08);
+  transition: all 0.4s ease;
+  animation: msCardFadeIn 0.6s ease var(--delay) both;
+}
+
+@keyframes msCardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ms-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(13, 27, 42, 0.15);
+}
+
+.ms-card--active {
+  box-shadow: 0 20px 40px rgba(196, 125, 0, 0.2);
+  transform: translateY(-8px);
+}
+
+
+.ms-img-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--accent-light);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.ms-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.5s ease;
+}
+
+.ms-card:hover .ms-img {
+  transform: scale(1.05);
+}
+
+.ms-card-body {
+  padding: 24px;
+}
+
+.ms-card-bar {
+  width: 50px;
+  height: 4px;
+  background: var(--accent);
+  margin-bottom: 14px;
+  border-radius: 2px;
+}
+
+.ms-card-name {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0d1b2a;
+  margin-bottom: 10px;
+}
+
+.ms-card-desc {
+  font-size: 14px;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* =====================================================
+   WHY STUDENTS CHOOSE (Footer Note)
+===================================================== */
+.bfc-footer-note {
+  opacity: 0;
+  width: 80%;
+  max-width: 1200px;
+  margin: 4rem auto;
+  transition: opacity 0.65s, transform 0.65s;
+  transform: translateY(28px);
+  background: #fff;
+}
+
+.bfc-footer-note.bfc-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bfc-footer-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 40px;
+  padding: 40px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #eef3ff 0%, #f5f6ff 100%);
+  border: 1px solid #d6d8f5;
+}
+
+.bfc-footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bfc-footer-accent {
+  width: 60px;
+  height: 4px;
+  background: #f5a623;
+  margin-bottom: 16px;
+  border-radius: 2px;
+}
+
+.bfc-footer-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0d1b2a;
+  line-height: 1.3;
+}
+
+.bfc-footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bfc-footer-intro {
+  font-size: 15px;
+  color: #4a5568;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.bfc-footer-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+
+.bfc-footer-bullet {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  font-size: 15px;
+  color: #0d1b2a;
+  font-weight: 600;
+}
+
+.bfc-bullet-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #1a56db;
+  flex-shrink: 0;
+}
+
+.bfc-footer-closing {
+  font-size: 16px;
+  color: #1a56db;
+  font-weight: 700;
+  font-style: italic;
+  padding-top: 12px;
+  border-top: 2px solid rgba(26, 86, 219, 0.2);
+}
+
+/* =====================================================
+   WHAT MAKES IT DIFFERENT
+===================================================== */
+.wd2-section {
+  color: #1a1a2e;
+  background: #f5f6ff;
+  padding: 5rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.wd2-section::before {
+  content: '';
+  opacity: 0.3;
+  pointer-events: none;
+  background-image: linear-gradient(#d6d8f5 1px, transparent 1px),
+    linear-gradient(90deg, #d6d8f5 1px, transparent 1px);
+  background-size: 48px 48px;
+  position: absolute;
+  inset: 0;
+}
+
+.wd2-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wd2-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.wd2-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.wd2-eyebrow-line {
+  width: 40px;
+  height: 2px;
+  background: #1a56db;
+}
+
+.wd2-eyebrow-text {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1a56db;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.wd2-heading {
+  font-size: 36px;
+  font-weight: 800;
+  color: #0d1b2a;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.wd2-heading-accent {
+  color: #1a56db;
+}
+
+.wd2-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.wd2-card {
+  padding: 28px;
+  border-radius: 16px;
+  display: flex;
+  gap: 18px;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: wd2In 0.6s ease calc(var(--i) * 0.1s) forwards;
+}
+
+@keyframes wd2In {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.wd2-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(13, 27, 42, 0.12);
+}
+
+.wd2-blue {
+  background: #fff;
+  border: 2px solid #1a56db;
+}
+
+.wd2-gold {
+  background: #fef6e4;
+  border: 2px solid #e9a230;
+}
+
+.wd2-card-num {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1a56db;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.wd2-gold .wd2-card-num {
+  color: #e9a230;
+}
+
+.wd2-card-body {
+  flex-grow: 1;
+}
+
+.wd2-card-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #1a56db;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.wd2-gold .wd2-card-tag {
+  color: #b57a20;
+}
+
+.wd2-card-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0d1b2a;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.wd2-card-desc {
+  font-size: 13px;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.wd2-banner {
+  grid-column: 1 / -1;
+  padding: 30px 40px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #1a56db 0%, #0d4db3 100%);
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: wd2In 0.6s ease calc(var(--i) * 0.1s) forwards;
+}
+
+.wd2-banner-quote {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.wd2-banner-quote strong {
+  color: #f5a623;
+  font-weight: 800;
+}
+
+/* =====================================================
+   PARKING NOTICE
+===================================================== */
+.parking-notice {
+  width: 100%;
+  padding: 2rem 1rem;
+  background: #fff;
+}
+
+.parking-notice-card {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 16px;
+  background: #fff8e1;
+  border-left: 5px solid #f5a623;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.parking-icon {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.parking-notice-card h3 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #b57a20;
+  margin-bottom: 20px;
+}
+
+.parking-item {
+  margin-bottom: 18px;
+  padding-left: 12px;
+  border-left: 3px solid #f5a623;
+}
+
+.parking-item h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0d1b2a;
+  margin-bottom: 6px;
+}
+
+.parking-item p {
+  font-size: 14px;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* =====================================================
+   JOIN THE BOOTCAMP CTA
+===================================================== */
+.bootcamp-cta-container {
+  width: 100%;
+  padding: 4rem 1rem;
+  background: #fff;
+}
+
+.bootcamp-cta-info {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 40px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #0d1b2a 0%, #1a56db 100%);
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.bootcamp-cta-info::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(245, 166, 35, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.bootcamp-cta-info-label {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(245, 166, 35, 0.2);
+  color: #f5a623;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.bootcamp-cta-info-CTA {
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+}
+
+.bootcamp-cta-info-CTA:last-of-type {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.bootcamp-cta-info a {
+  display: inline-block;
+  padding: 14px 40px;
+  background: #f5a623;
+  color: #0d1b2a;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 8px 20px rgba(245, 166, 35, 0.3);
+}
+
+.bootcamp-cta-info a:hover {
+  transform: translateY(-3px);
+  background: #e09500;
+  box-shadow: 0 12px 28px rgba(245, 166, 35, 0.4);
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+@media (max-width: 968px) {
+  .bfc-split-panel {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ms-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wd2-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bfc-footer-inner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bootcamp-features-container,
+  .ms-section,
+  .wd2-section {
+    padding: 3rem 1rem;
+  }
+
+  .bootcamp-features-section-heading,
+  .ms-h1,
+  .wd2-heading {
+    font-size: 26px;
+  }
+
+  .bootcamp-features-lead,
+  .ms-subhead {
+    font-size: 14px;
+  }
+
+  .ms-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .wd2-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bfc-footer-note {
+    width: 92%;
+    margin: 2rem auto;
+  }
+
+  .bfc-footer-title {
+    font-size: 22px;
+  }
+
+  .wd2-banner {
+    padding: 24px 20px;
+  }
+
+  .wd2-banner-quote {
+    font-size: 15px;
+  }
+
+   .parking-notice-card {
+    padding: 24px;
+  }
+
+  .bootcamp-cta-info {
+    padding: 40px 24px;
+  }
+
+  .bootcamp-cta-info-CTA {
+    font-size: 16px;
+  }
+
+  .bootcamp-cta-info-CTA:last-of-type {
+    font-size: 18px;
+  }
+
+  .bfc-pointer-title {
+    font-size: 15px;
+  }
+
+  .bfc-pointer-item {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bootcamp-features-section-heading,
+  .ms-h1,
+  .wd2-heading {
+    font-size: 22px;
+  }
+
+  .bootcamp-features-eyebrow-text,
+  .ms-eyebrow-text,
+  .wd2-eyebrow-text {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .bfc-pointer-chip {
+    width: 38px;
+    height: 38px;
+  }
+
+  .bfc-image-badge {
+    bottom: 14px;
+    left: 14px;
+    right: 14px;
+  }
+
+  .bfc-badge-num {
+    font-size: 30px;
+  }
+
+  .bfc-badge-label {
+    font-size: 13px;
+  }
+
+  .wd2-card {
+    padding: 20px;
+    gap: 14px;
+  }
+
+  .wd2-card-num {
+    font-size: 28px;
+  }
+
+  .parking-notice-card {
+    padding: 20px;
+  }
+
+  .parking-notice-card h3 {
+    font-size: 18px;
+  }
+
+  .bootcamp-cta-info a {
+    padding: 12px 28px;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,313 @@
+.corebtr-programs-container {
+  background-color: #f4f6fb;
+  padding: 60px 40px 50px;
+  color: #0d1b2a;
+}
+
+/* ========== HEADER ========== */
+.corebtr-programs-header {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+}
+
+.corebtr-programs-header h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #0d1b2a;
+  margin-bottom: 14px;
+  letter-spacing: -0.3px;
+}
+
+.corebtr-programs-header h2 span {
+  color: #1a56db;
+  font-weight: 800;
+}
+
+.corebtr-programs-header h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #0d1b2a;
+  margin-bottom: 4px;
+}
+
+.corebtr-programs-lead {
+  font-size: 14px;
+  color: #4a5568;
+  line-height: 1.7;
+  margin-top: 12px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.corebtr-programs-lead b {
+  color: #1c1c1c;
+  font-weight: 700;
+}
+
+/* ========== GRID ========== */
+.corebtr-programs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+}
+
+/* ========== CARDS ========== */
+.corebtr-programs-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 28px;
+  border: 2px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.corebtr-programs-card.program1 {
+  border-color: #f5a623;
+}
+
+.corebtr-programs-card.program2 {
+  border-color: #1a56db;
+}
+
+.corebtr-programs-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.corebtr-programs-card.program1:hover {
+  box-shadow: 0 8px 24px rgba(245, 166, 35, 0.2);
+}
+
+.corebtr-programs-card.program2:hover {
+  box-shadow: 0 8px 24px rgba(26, 86, 219, 0.2);
+}
+
+.corebtr-programs-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #f5a623;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #f5a623;
+}
+
+.program2 .corebtr-programs-title {
+  color: #1a56db;
+  border-bottom-color: #1a56db;
+}
+
+.corebtr-programs-subtitle {
+  font-size: 14px;
+  color: #4a5568;
+  font-style: italic;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* ========== LIST ========== */
+.corebtr-programs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+  flex-grow: 1;
+}
+
+.corebtr-programs-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f2f5;
+  font-size: 14px;
+  color: #4a5568;
+  line-height: 1.5;
+}
+
+.corebtr-programs-list li:last-child {
+  border-bottom: none;
+}
+
+.corebtr-programs-list li b {
+  color: #1c1c1c;
+  font-weight: 600;
+}
+
+.check-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ========== FEES ========== */
+.corebtr-programs-fees {
+  background: #f8f9fb;
+  border-radius: 6px;
+  padding: 14px 18px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.corebtr-programs-fees-label {
+  font-size: 15px;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.corebtr-programs-fees-amount {
+  color: #f5a623;
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 6px;
+}
+
+.program2 .corebtr-programs-fees-amount {
+  color: #1a56db;
+}
+
+/* ========== ENROLL BUTTON ========== */
+.corebtr-programs-enroll-btn {
+  display: block;
+  text-align: center;
+  padding: 14px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.program1-btn {
+  background-color: #f5a623;
+}
+
+.program1-btn:hover {
+  background-color: #e09500;
+}
+
+.program2-btn {
+  background-color: #1a56db;
+}
+
+.program2-btn:hover {
+  background-color: #1e40af;
+}
+
+/* ========== REGISTRATION BOX ========== */
+.corebtr-programs-registration-box {
+  background: #1a56db;
+  color: #fff;
+  border-radius: 8px;
+  padding: 30px 24px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.corebtr-programs-registration-box h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.corebtr-programs-registration-time {
+  font-size: 15px;
+  color: #f5a623;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 968px) {
+  .corebtr-programs-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .corebtr-programs-header h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .corebtr-programs-container {
+    padding: 50px 20px 40px;
+  }
+
+  .corebtr-programs-header h2 {
+    font-size: 22px;
+  }
+
+  .corebtr-programs-header h3 {
+    font-size: 15px;
+  }
+
+  .corebtr-programs-lead {
+    font-size: 13px;
+    text-align: left;
+  }
+
+  .corebtr-programs-card {
+    padding: 22px;
+  }
+
+  .corebtr-programs-title {
+    font-size: 20px;
+  }
+
+  .corebtr-programs-subtitle {
+    font-size: 13px;
+  }
+
+  .corebtr-programs-list li {
+    font-size: 13px;
+  }
+
+  .corebtr-programs-registration-box {
+    padding: 24px 20px;
+  }
+
+  .corebtr-programs-registration-box h3 {
+    font-size: 18px;
+  }
+
+  .corebtr-programs-registration-time {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .corebtr-programs-container {
+    padding: 40px 14px 30px;
+  }
+
+  .corebtr-programs-header h2 {
+    font-size: 20px;
+  }
+
+  .corebtr-programs-card {
+    padding: 18px;
+  }
+
+  .corebtr-programs-enroll-btn {
+    font-size: 12px;
+    padding: 12px 16px;
+    letter-spacing: 0.5px;
+  }
+
+  .corebtr-programs-registration-box h3 {
+    font-size: 16px;
+  }
+}

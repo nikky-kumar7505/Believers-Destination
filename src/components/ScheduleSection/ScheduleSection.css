@@ -1,0 +1,70 @@
+.corebtr-programs-schedule {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem 1rem 3rem;
+  background: #fff;
+}
+
+.corebtr-programs-schedule h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0d1b2a;
+  margin-bottom: 24px;
+  letter-spacing: -0.3px;
+}
+
+.corebtr-programs-schedule h2 span {
+  color: #1a56db;
+  font-weight: 800;
+}
+
+.corebtr-programs-schedule-btn {
+  display: inline-block;
+  background-color: #1a56db;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 14px 36px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(26, 86, 219, 0.25);
+}
+
+.corebtr-programs-schedule-btn:hover {
+  background-color: #1e40af;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(26, 86, 219, 0.35);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .corebtr-programs-schedule {
+    padding: 1.5rem 1rem 2rem;
+  }
+
+  .corebtr-programs-schedule h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .corebtr-programs-schedule-btn {
+    font-size: 13px;
+    padding: 12px 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .corebtr-programs-schedule h2 {
+    font-size: 18px;
+  }
+
+  .corebtr-programs-schedule-btn {
+    font-size: 12px;
+    padding: 10px 24px;
+    letter-spacing: 0.5px;
+  }
+}
