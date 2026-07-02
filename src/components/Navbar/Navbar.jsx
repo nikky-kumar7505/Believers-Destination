@@ -31,6 +31,12 @@ const Navbar = () => {
     setOpenDropdown(null);
   };
 
+  // Prevent navigation for demo/internal links
+  const handleDemoClick = (e) => {
+    e.preventDefault();
+    closeMobileMenu();
+  };
+
   const ArrowIcon = ({ isOpen }) => (
     <svg
       className={`arrow-icon ${isOpen ? 'arrow-icon--open' : ''}`}
@@ -58,24 +64,24 @@ const Navbar = () => {
 
   const dropdownItems = {
     plans: [
-      { label: 'Basic Plan', href: '/plans/basic' },
-      { label: 'Premium Plan', href: '/plans/premium' },
-      { label: 'Pro Plan', href: '/plans/pro' },
+      { label: 'Basic Plan' },
+      { label: 'Premium Plan' },
+      { label: 'Pro Plan' },
     ],
     schedules: [
-      { label: 'Weekly Schedule', href: '/schedules/weekly' },
-      { label: 'Monthly Schedule', href: '/schedules/monthly' },
+      { label: 'Weekly Schedule' },
+      { label: 'Monthly Schedule' },
     ],
     results: [
-      { label: '2024 Results', href: '/results/2024' },
-      { label: '2023 Results', href: '/results/2023' },
+      { label: '2024 Results' },
+      { label: '2023 Results' },
     ],
   };
 
   return (
     <header className="navbar-container">
       <div className="navbar-logo">
-        <a href="/" onClick={closeMobileMenu}>
+        <a href="#" onClick={handleDemoClick}>
           <img
             alt="CoreBTR Logo"
             src="https://cdn.dribbble.com/userupload/47577791/file/25dd269a09491e2a44c8437764fb5473.png"
@@ -84,15 +90,15 @@ const Navbar = () => {
       </div>
 
       <nav className={`web-nav ${isMobileMenuOpen ? 'web-nav--mobile-open' : ''}`}>
-        <a href="/" onClick={closeMobileMenu}>Home</a>
+        <a href="#" onClick={handleDemoClick}>Home</a>
         <a href="https://drzainabvora.com/about" target="_blank" rel="noreferrer" onClick={closeMobileMenu}>
           About Dr. ZV
         </a>
-        <a href="/corebtr-offline" onClick={closeMobileMenu}>CoreBTR Offline</a>
-        <a href="/corebtr-bootcamp" className="active" onClick={closeMobileMenu}>
+        <a href="#" onClick={handleDemoClick}>CoreBTR Offline</a>
+        <a href="#" className="active" onClick={handleDemoClick}>
           CoreBTR Bootcamp
         </a>
-        <a href="/workbooks" onClick={closeMobileMenu}>Workbooks</a>
+        <a href="#" onClick={handleDemoClick}>Workbooks</a>
 
         {Object.entries({
           plans: 'Buy New Plans',
@@ -110,8 +116,8 @@ const Navbar = () => {
             </button>
             {openDropdown === key && (
               <div className="dropdown-menu">
-                {dropdownItems[key].map((item) => (
-                  <a key={item.href} href={item.href} onClick={closeMobileMenu}>
+                {dropdownItems[key].map((item, idx) => (
+                  <a key={idx} href="#" onClick={handleDemoClick}>
                     {item.label}
                   </a>
                 ))}
@@ -120,7 +126,7 @@ const Navbar = () => {
           </div>
         ))}
 
-        <a href="/blogs" onClick={closeMobileMenu}>Blogs</a>
+        <a href="#" onClick={handleDemoClick}>Blogs</a>
         <a
           className="login-signup-cta"
           href="https://portal.corebtr.com/login"

@@ -100,11 +100,9 @@ const Footer = () => {
             <h3 className="footer-title">{section.title}</h3>
             <ul className="footer-links">
               {section.links.map((link, j) => (
-                <li key={j}>
-                  <a href={link.href} className={link.active ? 'active' : ''}>
-                    {link.label}
-                  </a>
-                </li>
+                <a href="#" onClick={(e) => e.preventDefault()} className={link.active ? 'active' : ''}>
+                {link.label}
+                </a>
               ))}
             </ul>
           </div>

@@ -94,11 +94,8 @@ const Programs = () => {
               </div>
             </div>
 
-            <a
-              className={`corebtr-programs-enroll-btn ${program.variant}-btn`}
-              href="/corebtr-bootcamp"
-            >
-              Registration Closed
+            <a className={`corebtr-programs-enroll-btn ${program.variant}-btn`} href="/corebtr-bootcamp">
+            Registration Closed
             </a>
           </div>
         ))}
